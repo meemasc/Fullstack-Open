@@ -5,7 +5,7 @@ and clicking the submit button.
 end note
 
 browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
-server-->browser: HTML status code 302 (URL redirect to /notes)
+server-->browser: HTML status code 302 (URL redirect to /exampleapp/notes)
 browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
 server-->browser: HTML-code
 browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
